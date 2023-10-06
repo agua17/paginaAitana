@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+      body {
+        background-image: url("https://i.pinimg.com/736x/78/50/43/785043b7389a91f0fd5fec6ade3878fd.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      nav a:hover {
+        background-color: #7a7c7b;
+        text-decoration: none;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-family: fantasy;
+        font-size: 250%;
+        text-align: center;
+        padding: 10px;
+      }
+      #formulario {
+        margin: auto;
+        border: 6px solid;
+        color: whitesmoke;
+        text-align: center;
+        text-shadow: 4px 2px 2px purple, 2px 4px 2px purple, -1px 0px 0px purple,
+          0px -1px 0px purple;
+        border-color: orchid;
+        width: 500px;
+        height: 350px;
+        background-color: rgba(234, 178, 235, 0.914);
+        background-image: url(../Media/Imagenes/formulario.png);
+      }
+
+      label.nombre {
+        text-shadow: 4px 2px 2px purple, 2px 4px 2px purple, -1px 0px 0px purple,
+          0px -1px 0px purple;
+        margin-top: 6%;
+      }
+
+      label.telefono {
+        text-shadow: 4px 2px 2px purple, 2px 4px 2px purple, -1px 0px 0px purple,
+          0px -1px 0px purple;
+        margin-top: 6%;
+      }
+      label.correo {
+        text-shadow: 4px 2px 2px purple, 2px 4px 2px purple, -1px 0px 0px purple,
+          0px -1px 0px purple;
+        margin-top: 6%;
+      }
+
+      input {
+        float: inline-end;
+      }
+      header {
+        text-align: center;
+        background-color: transparent;
+      }
+      h1.a {
+        color: gainsboro;
+        font-family: fantasy;
+        font-size: 500%;
+        text-shadow: 4px 2px 2px black, 2px 4px 2px rgba(173, 202, 247, 0.849),
+          -8px 2px 2px aliceblue, 0px -4px 0px black;
+        color: purple;
+        font-size: 800%;
+        margin-top: 12%;
+        text-align: center;
+      }
+      nav {
+        margin-top: 2%;
+        text-shadow: 4px 2px 2px purple, 2px 4px 2px black, -1px 0px 0px black,
+          0px -1px 0px black;
+        color: #290241;
+      }
+      a {
+        color: white;
+      }
+      h1.b {
+        font-family: fantasy;
+        text-shadow: 2px 0px 0px black, 2px 4px 2px white, -2px 0px 0px white,
+          0px -2px 0px black;
+        margin-bottom: 14%;
+        font-size: 250%;
+        color: purple;
+      }
+      div{
+        margin-top: 40px;
+      }
+      p.a{
+        text-shadow: 2px 1px 1px beige, 0px -1px 0px beige;
+            padding-left: 20px;
+            text-align: center;
+            font-size: 12px;
+      }
+      p.b{
+        text-shadow: 1px 0px 0px white, 0px 1px 0px beige;
+          padding-left: 20px;
+          text-align: center;
+          font-size: 14px;
+      }
+      input{
+        opacity: 1;
+      }
+      a.a{
+        color: rgb(106, 9, 102);
+      }
+      footer {
+        background-color: #c67df5;
+        display: block;
+        border: 2px solid whitesmoke;
+        text-align: center;
+      }
+      p.c {
+        text-align: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="a"
+      >
+        AITANA
+      </h1>
+    </header>
+
+    <center>
+      <nav
+      >
+        <a href="Index.html"> Index </a>
+        <a href="Tienda.html"> Tienda </a>
+        <a href="Discografia.html"> Discografía </a>
+        <a href="Ubicacion.html"> Ubicación </a>
+        <a href="Contacto.html" > Contacto </a>
+      </nav>
+      <h1 class="b"
+      >
+        CONTACTO
+      </h1>
+    </center>
+
+    <form id="formulario">
+      <h1 class="b">FORMULARIO</h1>
+      <center>
+        <div>
+          <label class="nombre"> NOMBRE </label>
+          <input type="text" id="varNombre" placeholder="Introduce" />
+        </div>
+
+        <div>
+          <label class="telefono"> TELÉFONO </label>
+          <input type="tel" id="varTelefono" placeholder="Introduce" />
+        </div>
+
+        <div>
+          <label class="correo"> CORREO </label>
+          <input type="email" id="varCorreo" placeholder="Introduce" />
+        </div>
+        <p class="a"
+        >
+          <input
+            type="checkbox"
+            data-required="1"
+            name="peticion"
+          />
+          <a class="a"
+          >
+            Quiero recibir más información sobre el artista y otros artistas
+            similares.
+          </a>
+        </p>
+
+        <input type="submit" value="ENVIAR" />
+      </center>
+    </form>
+    <center>
+      <p class="b"
+      >
+        <input
+          type="checkbox"
+          data-required="1"
+          name="terminos"
+        />
+        Acepta los
+        <a class="a"
+          
+          href="https://universalmusic.es/politica-de-privacidad/"
+        >
+          Términos y Condiciones de esta página web
+        </a>
+      </p>
+    </center>
+
+    <footer
+    >
+      <center>
+        <a
+          href="https://www.facebook.com/aitanaocanaoficial/"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/Aitanax?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com/aitanax/?hl=es"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCtakZatUqY-XaihWfMnz07w"
+          class="fa fa-youtube"
+        ></a>
+        <p class="c">Autor:Aguas Santas Núñez Fresco</p>
+      </center>
+    </footer>
+  </body>
+</html>
